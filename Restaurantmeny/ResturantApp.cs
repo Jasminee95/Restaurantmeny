@@ -10,7 +10,6 @@ public class ResturantApp
         {
             new MenuItem("Pizza Margherita", "Main Course", 169.50m),
             new MenuItem("Tomato Soup", "Appetizer", 89.00m),
-            new MenuItem("Tomato Soup", "Appetizer", 89.00m),
             new MenuItem("Coca-Cola", "Drink", 45.00m),
             new MenuItem("Brownie", "Dessert", 75.00m),
             new MenuItem("Spagetti Carbonara", "Main Course", 189.00m),
@@ -106,9 +105,10 @@ public class ResturantApp
         string input;
         int itemNumber = 1;
 
+        Console.Clear();
         Console.WriteLine("\n**** Calculate Order Price ****");
         Console.WriteLine("Please enter the name of the item you would like to add to your order");
-        Console.WriteLine("Write 'done' when you are done");
+        Console.WriteLine("Write 'done' when you are done\n");
         Menu.PrintAllMenuItems();
 
         while (true)
